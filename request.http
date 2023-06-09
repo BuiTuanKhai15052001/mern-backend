@@ -1,0 +1,55 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "khaibadao02@gmail.com",
+    "password": "khai123", 
+    "confirmPassword": "khai123"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "khaibadao02@gmail.com",
+    "password": "khai123"
+    
+}
+//645d2b9cbf06f1ec88412526
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVkOTdkY2M0ZjMxMjYzOTk4M2I1MTciLCJpYXQiOjE2ODYwMzQ1OTEsImV4cCI6MTcxNzU3MDU5MX0.iD_Bx_6Bu7S75g750wskVnaw50ORezK4s37zJLtrEtM
+
+{
+    "title": "MERN APP 5",
+    "description": "Start my project 4",
+    "url": "google.com",
+    "status": "TO LEARN"
+}
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVkOTdkY2M0ZjMxMjYzOTk4M2I1MTciLCJpYXQiOjE2ODM4NTUzMjYsImV4cCI6MTcxNTM5MTMyNn0.2oKyVxUxFEas4U32xZmbsJGWQnV75W-z4QPpy4tGrdQ
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVkOTdkY2M0ZjMxMjYzOTk4M2I1MTciLCJpYXQiOjE2ODM5MTQ0MjUsImV4cCI6MTcxNTQ1MDQyNX0.WHnkKtEfAsiOxl5eurTje0Zb84RSeLXG3-PMpnEVsIY
+
+
+###
+PUT http://localhost:5000/api/posts/645e794300327ff471ed999c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVkOTdkY2M0ZjMxMjYzOTk4M2I1MTciLCJpYXQiOjE2ODM5MDc1OTEsImV4cCI6MTcxNTQ0MzU5MX0.KVbM84PE5AZ5o0f8Fb_5fLLDHw-34e1kKwhcCmxIlV8
+
+{
+    "title": "MERN APP Update2",
+    "description": "Start my project Update2",
+   "url": "facebook.com",
+    "status": "LEARNING"
+}
+###
+DELETE  http://localhost:5000/api/posts/645e78d98019ac2c91479421
+//Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVkOTdkY2M0ZjMxMjYzOTk4M2I1MTciLCJpYXQiOjE2ODM5MTQ0MjUsImV4cCI6MTcxNTQ1MDQyNX0.WHnkKtEfAsiOxl5eurTje0Zb84RSeLXG3-PMpnEVsIY
+
