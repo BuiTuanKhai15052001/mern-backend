@@ -78,7 +78,7 @@ const createPost = async(req, res, next) => {
         }
     
         const urlCheck = url.startsWith("https://") ? url : `https://${url}`;
-        console.log(urlCheck);
+        console.log("urlCheck:: ",urlCheck);
         //     console.log(req.payload);
     
         const newPost = new Post({
