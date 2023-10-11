@@ -88,6 +88,8 @@ const createPost = async(req, res, next) => {
           status: status || "TO LEARN",
           user: req.payload.userId,
         });
+
+        console.log("newPost::::; ", newPost);
         const savePost = await newPost.save();
     
         return res.send({

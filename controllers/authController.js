@@ -57,11 +57,10 @@ const register = async (req, res, next) => {
     });
     //save user to db
     const saveUser = await user.save();
-    // return token
-    //   const accessToken = await signAccessToken(user._id)
+
     return res.send({
       success: true,
-      message: "register success",
+      message: "Register success",
       saveUser,
       // accessToken
     });
